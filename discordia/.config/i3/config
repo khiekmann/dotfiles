@@ -175,6 +175,6 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # screenshot
-bindsym Print exec scrot --delay 4 $HOME/Downloads/$(date +%Y-%m-%d_%H:%M:%S).png
-bindsym $mod+Print exec scrot --focused $HOME/Downloads/$(date +%Y-%m-%d_%H:%M:%S).png
-bindsym $mod+Shift+Print exec scrot $HOME/Downloads/$(date +%Y-%m-%d_%H:%M:%S).png
+bindsym Print exec scrot --focused $HOME/Downloads/$(date +%Y-%m-%d_%H-%M-%S).png
+bindsym $mod+Print exec scrot --focused --delay 4 $HOME/Downloads/$(date +%Y-%m-%d_%H-%M-%S).png
+bindsym $mod+Shift+Print exec scrot $HOME/Downloads/$(date +%Y-%m-%d_%H-%M-%S).png
